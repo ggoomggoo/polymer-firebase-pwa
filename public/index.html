@@ -23,5 +23,28 @@
   </style>
 </head>
 <body>
+  <platinum-sw-register
+          auto-register
+          skip-waiting
+          clients-claim
+          reload-on-install
+          href="sw-import.js">
+    <platinum-sw-cache
+            default-cache-strategy="networkFirst">
+    </platinum-sw-cache>
+  </platinum-sw-register>
+  <note-app></note-app>
 </body>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDBc0hA0WFXbD_lGtwylCmnzIrg0b0P7z4",
+    authDomain: "t1t1hello-76870.firebaseapp.com",
+    databaseURL: "https://t1t1hello-76870.firebaseio.com",
+    storageBucket: "t1t1hello-76870.appspot.com",
+    messagingSenderId: "717798314967"
+  };
+  firebase.initializeApp(config);
+</script>
 </html>
